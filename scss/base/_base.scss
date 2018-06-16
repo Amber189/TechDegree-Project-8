@@ -1,10 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: #111;
   background: #edeff0;
   background-image: url('../svgs/background.svg');
   background-repeat: repeat;
@@ -17,20 +13,18 @@ p {
   text-align: left;
 }
 
-
 a {
   text-decoration: none;
-  color: #39add1;
+  color: $primary-blue;
   font-weight: 700;
   padding-left: 15px;
-
   &:hover {
-    color: #111;
+    color: $black;
     // vvv this selects both anchor and svg as a group but svgs need to use fill instead of background color
     & .icon{
       transform: scale(1.5, 1.5);
       transform-origin: 50% 50%;
-      fill: #111;
+      fill: $black;
     }
   }
 }

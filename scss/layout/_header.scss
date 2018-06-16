@@ -7,15 +7,9 @@ header nav{
   text-align: left;
   & ul li{
     font: bold 100% 'Roboto Slab', serif;
-    color: #39add1;
+    color: $primary-blue;
     vertical-align: text-top;
     display: inline-block;
     margin-right: 20px;
-
-    // .icon{
-    //   position: relative;
-    //   right: 6px;
-    //   height: 14px;
-    // }
   }
 }

@@ -1,6 +1,6 @@
 #container {
   max-width: 960px;
-  background: #fff;
+  background: $white;
   margin: 0 auto;
   height: 100%; /* new line */
 }
@@ -10,6 +10,7 @@ main {
   padding-top: 50px;
 }
 
-main h2 {
-  font-size: 28px;
+
+#pup{
+  margin: 0 10px;
 }

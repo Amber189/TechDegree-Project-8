@@ -4,12 +4,12 @@
 }
 
 //Logo Text display at large and small media sizes
-
 .st1{
   display: none;
 }
 
-@media (min-width: 425px) {
+@include mq (xxsmall){
+// @media (min-width: 425px) {
   .st1 {
     display: initial;
   }
@@ -18,27 +18,36 @@
   }
 }
 
+#Layer_1:hover{
+  .st2{
+  animation: pulse 0.3s linear 1;
+  transform-origin:70px 69px;
+}
+}
+@keyframes pulse{
+  50%  {transform: scale(0.8);}
+}
 
 
-//his logo-text
-// .st1{
-//   display: none;
-//   @include mq ($break-xxs){
-//     display: initial;
-//
-//   }
-// }
-//
-//
-// //his heading
-// .logo-text{
-//
-//   color: #ba8058;
-//   @include mq ($break-xxs){
-//   display: none;
-//
-//   }
-// }
+
+
+//inherited color values for currentColor on svg paths
+.red-pup{
+  color: $red;
+}
+.fawn-pup{
+  color: $fawn;
+}
+.sable-pup{
+  color: $sable;
+}
+.stone-pup{
+  color: $stone;
+}
+
+
+
+
 
 // .iconified{
 //   background: transparent url(../svgs/nav-contact.svg) scroll no-repeat left center;
