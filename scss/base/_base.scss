@@ -22,8 +22,15 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
-}
+  padding-left: 15px;
 
-a:hover {
-  color: #111;
+  &:hover {
+    color: #111;
+    // vvv this selects both anchor and svg as a group but svgs need to use fill instead of background color
+    & .icon{
+      transform: scale(1.5, 1.5);
+      transform-origin: 50% 50%;
+      fill: #111;
+    }
+  }
 }

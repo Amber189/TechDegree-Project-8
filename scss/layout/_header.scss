@@ -11,17 +11,11 @@ header nav{
     vertical-align: text-top;
     display: inline-block;
     margin-right: 20px;
-    &:hover,
-    li img:hover{
-      color: gray;
-    }
-    .icon{
-      position: relative;
-      right: 6px;
-      height: 14px;
-      &:hover{
-        color: gray;
-      }
-    }
+
+    // .icon{
+    //   position: relative;
+    //   right: 6px;
+    //   height: 14px;
+    // }
   }
 }

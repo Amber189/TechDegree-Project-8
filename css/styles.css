@@ -18,10 +18,14 @@ p {
 a {
   text-decoration: none;
   color: #39add1;
-  font-weight: 700; }
-
-a:hover {
-  color: #111; }
+  font-weight: 700;
+  padding-left: 15px; }
+  a:hover {
+    color: #111; }
+    a:hover .icon {
+      transform: scale(1.5, 1.5);
+      transform-origin: 50% 50%;
+      fill: #111; }
 
 header {
   padding-top: 10px; }
@@ -35,15 +39,6 @@ header nav {
     vertical-align: text-top;
     display: inline-block;
     margin-right: 20px; }
-    header nav ul li:hover,
-    header nav ul li li img:hover {
-      color: gray; }
-    header nav ul li .icon {
-      position: relative;
-      right: 6px;
-      height: 14px; }
-      header nav ul li .icon:hover {
-        color: gray; }
 
 #container {
   max-width: 960px;
@@ -66,6 +61,16 @@ footer {
 
 .logo {
   margin: 1em auto;
-  width: 14.5%; }
+  width: 15%; }
+
+.st1 {
+  display: none; }
+
+@media (min-width: 425px) {
+  .st1 {
+    display: initial; }
+
+  .logo-text {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

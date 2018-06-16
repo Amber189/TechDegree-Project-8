@@ -1,13 +1,18 @@
 // Media Query
 
 @mixin mq($break){
-  @if $break == "small" {
-    @media (min-width: $break-s) and (max-width: $brkpoint-md){
+  @if $break == "xxsmall" {
+    @media (min-width: $break-xxs){
+      @content;
+    }
+  }
+  @else if $break == "small" {
+    @media (min-width: $break-s) {
       @content;
     }
   }
   @else if $break == "medium" {
-    @media (min-width: $break-m +1){
+    @media (min-width: $break-m ){
       @content;
     }
   }
@@ -16,3 +21,4 @@
       @content;
     }
   }
+}

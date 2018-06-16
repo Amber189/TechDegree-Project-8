@@ -1,6 +1,46 @@
 .logo{
   margin: 1em auto;
-  width: 14.5%;
-  // width: 120px;
-  // height: 140px;
+  width: 15%;
 }
+
+//Logo Text display at large and small media sizes
+
+.st1{
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .st1 {
+    display: initial;
+  }
+  .logo-text {
+    display: none;
+  }
+}
+
+
+
+//his logo-text
+// .st1{
+//   display: none;
+//   @include mq ($break-xxs){
+//     display: initial;
+//
+//   }
+// }
+//
+//
+// //his heading
+// .logo-text{
+//
+//   color: #ba8058;
+//   @include mq ($break-xxs){
+//   display: none;
+//
+//   }
+// }
+
+// .iconified{
+//   background: transparent url(../svgs/nav-contact.svg) scroll no-repeat left center;
+//   padding: 2px 5px 2px 20px;
+// }
